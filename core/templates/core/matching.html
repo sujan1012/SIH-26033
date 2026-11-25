@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harvest Matching | CropRelay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f2;
+            padding: 35px 15px;
+            color: #26352b;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 22px;
+            border: 1px solid #e4eae1;
+        }
+
+        h2, h3 { color: #173d2a; }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .stat {
+            background: #edf5ec;
+            padding: 18px;
+            border-radius: 9px;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 24px;
+            margin-top: 10px;
+            color: #247544;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 13px;
+            text-align: left;
+            border-bottom: 1px solid #edf0eb;
+        }
+
+        th { color: #718071; }
+
+        .status {
+            font-weight: bold;
+            color: #247544;
+        }
+
+        a { color: #247544; }
+
+        @media(max-width: 650px) {
+            .stats { grid-template-columns: 1fr; }
+            .card { overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="card">
+        <h2>CropRelay Harvest Matching </h2>
+        <p>Buyer: <strong>{{ order.buyer_name }}</strong></p>
+        <p>Crop: {{ order.crop_name }}</p>
+        <p>Required quantity: {{ order.required_quantity_kg }} kg</p>
+        <p>Target price: ₹{{ order.target_price_per_kg }}/kg</p>
+        <p>Delivery location: {{ order.delivery_location }}</p>
+        <p class="status">Matching status: {{ status }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Matching Summary</h3>
+
+        <div class="stats">
+            <div class="stat">
+                Matched quantity
+                <strong>{{ matched_quantity|floatformat:2 }} kg</strong>
+            </div>
+
+            <div class="stat">
+                Remaining quantity
+                <strong>{{ remaining|floatformat:2 }} kg</strong>
+            </div>
+
+            <div class="stat">
+                Average produce price
+                <strong>₹{{ average_price|floatformat:2 }}/kg</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Farmer Contributions</h3>
+
+        {% if allocations %}
+        <table>
+            <tr>
+                <th>Farmer</th>
+                <th>Village</th>
+                <th>Quantity</th>
+                <th>Price/kg</th>
+                <th>Produce cost</th>
+            </tr>
+
+            {% for item in allocations %}
+            <tr>
+                <td>{{ item.farmer }}</td>
+                <td>{{ item.village }}</td>
+                <td>{{ item.quantity|floatformat:2 }} kg</td>
+                <td>₹{{ item.price|floatformat:2 }}</td>
+                <td>₹{{ item.cost|floatformat:2 }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No eligible farmers found for this requirement.</p>
+        {% endif %}
+    </div>
+
+    <div class="card">
+        <h3>Estimated Produce Cost</h3>
+        <h2>₹{{ total_cost|floatformat:2 }}</h2>
+        <p>This is the estimated cost of the matched produce only.
+           Transport and platform charges are not included.</p>
+        <p><strong>Note:</strong> This is a proposed match, not a confirmed
+           reservation. Farmer stock has not been locked or deducted.</p>
+    </div>
+
+    <p><a href="/">← Back to Dashboard</a></p>
+
+</div>
+</body>
+</html>

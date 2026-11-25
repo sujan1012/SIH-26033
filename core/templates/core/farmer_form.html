@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Farmer | CropRelay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f2;
+            margin: 0;
+            padding: 40px 15px;
+            color: #26352b;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e4eae1;
+        }
+
+        h2 { color: #173d2a; }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 18px;
+            border: 1px solid #ccd6ca;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #247544;
+            color: white;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        a { color: #247544; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register a Farmer </h2>
+        <p>Add a new farmer to CropRelay.</p>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Register Farmer</button>
+        </form>
+
+        <p><a href="/">← Back to Dashboard</a></p>
+    </div>
+</body>
+</html>
