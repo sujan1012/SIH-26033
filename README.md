@@ -105,66 +105,66 @@ CropRelay is technically feasible using widely available open-source technologie
 
 **Potential Challenges and Risks:**
 
--Inaccurate information about available produce.
+- Inaccurate information about available produce.
 
--Differences in crop quality and grading.
+- Differences in crop quality and grading.
 
--Transportation coordination between multiple farmers.
+- Transportation coordination between multiple farmers.
 
--Changes in market prices and produce availability.
+- Changes in market prices and produce availability.
 
--Building trust between farmers and buyers.
+- Building trust between farmers and buyers.
 
 **Strategies to Overcome Challenges:**
 
--Introduce produce verification and quality grading.
+- Introduce produce verification and quality grading.
 
--Implement stock reservation to avoid duplicate allocations.
+- Implement stock reservation to avoid duplicate allocations.
 
--Enable transparent farmer-wise pricing and quantity records.
+- Enable transparent farmer-wise pricing and quantity records.
 
--Integrate logistics coordination for aggregated orders.
+- Integrate logistics coordination for aggregated orders.
 
--Provide order status updates and transaction records.
+- Provide order status updates and transaction records.
 
 ## Impact and Benefits
 **Economic Impact:**
 
--Better market access for small-scale farmers.
+- Better market access for small-scale farmers.
 
--Potential reduction in intermediary-related costs.
+- Potential reduction in intermediary-related costs.
 
--Opportunities to fulfil larger bulk orders collectively.
+- Opportunities to fulfil larger bulk orders collectively.
 
--More transparent price and quantity allocation.
+- More transparent price and quantity allocation.
 
 **Social Impact:**
 
--Encourages collaboration among small farmers.
+- Encourages collaboration among small farmers.
 
--Strengthens connections between farming communities and buyers.
+- Strengthens connections between farming communities and buyers.
 
--Supports fairer participation in agricultural markets.
+- Supports fairer participation in agricultural markets.
 
 **Environmental Impact:**
 
--Creates opportunities for coordinated transportation.
+- Creates opportunities for coordinated transportation.
 
--Potentially reduces inefficient trips through consolidated deliveries.
+- Potentially reduces inefficient trips through consolidated deliveries.
 
--Helps improve planning around available agricultural produce.
+- Helps improve planning around available agricultural produce.
 
 **Target Audience:**
 
--Small and marginal farmers.
+- Small and marginal farmers.
 
--Farmer Producer Organisations (FPOs).
+- Farmer Producer Organisations (FPOs).
 
--Wholesalers and retailers.
+- Wholesalers and retailers.
 
--Bulk agricultural buyers.
+- Bulk agricultural buyers.
 
--Institutional buyers.
+- Institutional buyers.
 
 ## Research and References
 1.Ministry of Agriculture and Farmers Welfare, Government of India
