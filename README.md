@@ -75,29 +75,27 @@ Development Environment: Visual Studio Code
 6.Matching Summary – The platform displays farmer-wise allocations, matched quantity, remaining quantity, total cost, and average price.
 
 ```mermaid
-
 flowchart TD
-    A([Start]) --> B[Farmer Registration]
-    B --> C[Farmer Adds Produce]
-    C --> D[(SQLite Database)]
-    E[Buyer Submits Order] --> F[Receive Crop, Quantity and Target Price]
-    F --> G[Retrieve Available Produce]
-    D --> G
-    G --> H{Crop Matches and Price Within Target?}
-    H -->|Yes| I[Sort Eligible Listings by Price]
-    H -->|No| J[No Matching Produce]
-    I --> K[Allocate Quantity Across Farmers]
-    K --> L{Required Quantity Fulfilled?}
-    L -->|Yes| M[Fully Matched]
-    L -->|No, Some Produce Found| N[Partially Matched]
-    L -->|No Produce Found| J
-    M --> O[Calculate Total and Average Cost]
-    N --> O
-    O --> P[Display Farmer-wise Matching Summary]
-    J --> P
-    P --> Q([End])
-   
-    ```
+A([Start]) --> B[Farmer Registration]
+B --> C[Farmer Adds Produce]
+C --> D[(SQLite Database)]
+E[Buyer Submits Order] --> F[Receive Crop, Quantity and Target Price]
+F --> G[Retrieve Available Produce]
+D --> G
+G --> H{Crop Matches and Price Within Target?}
+H -->|Yes| I[Sort Eligible Listings by Price]
+H -->|No| J[No Matching Produce]
+I --> K[Allocate Quantity Across Farmers]
+K --> L{Required Quantity Fulfilled?}
+L -->|Yes| M[Fully Matched]
+L -->|No, Some Produce Found| N[Partially Matched]
+L -->|No Produce Found| J
+M --> O[Calculate Total and Average Cost]
+N --> O
+O --> P[Display Farmer-wise Matching Summary]
+J --> P
+P --> Q([End])
+```
     
 
 ## Feasibility and Viability
