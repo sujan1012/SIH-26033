@@ -74,7 +74,7 @@ Development Environment: Visual Studio Code
 
 6.Matching Summary – The platform displays farmer-wise allocations, matched quantity, remaining quantity, total cost, and average price.
 
-'''mermaid
+```mermaid
 flowchart TD
     A([Start]) --> B[Farmer Registration]
     B --> C[Farmer Adds Produce]
@@ -95,7 +95,7 @@ flowchart TD
     O --> P[Display Farmer-wise Matching Summary]
     J --> P
     P --> Q([End])
-    '''
+    ```
     
 
 ## Feasibility and Viability
