@@ -106,51 +106,73 @@ CropRelay is technically feasible using widely available open-source technologie
 **Potential Challenges and Risks:**
 
 -Inaccurate information about available produce.
+
 -Differences in crop quality and grading.
+
 -Transportation coordination between multiple farmers.
+
 -Changes in market prices and produce availability.
+
 -Building trust between farmers and buyers.
 
 **Strategies to Overcome Challenges:**
 
 -Introduce produce verification and quality grading.
+
 -Implement stock reservation to avoid duplicate allocations.
+
 -Enable transparent farmer-wise pricing and quantity records.
+
 -Integrate logistics coordination for aggregated orders.
+
 -Provide order status updates and transaction records.
 
 ## Impact and Benefits
 **Economic Impact:**
 
 -Better market access for small-scale farmers.
+
 -Potential reduction in intermediary-related costs.
+
 -Opportunities to fulfil larger bulk orders collectively.
+
 -More transparent price and quantity allocation.
 
 **Social Impact:**
 
 -Encourages collaboration among small farmers.
+
 -Strengthens connections between farming communities and buyers.
+
 -Supports fairer participation in agricultural markets.
 
 **Environmental Impact:**
 
 -Creates opportunities for coordinated transportation.
+
 -Potentially reduces inefficient trips through consolidated deliveries.
+
 -Helps improve planning around available agricultural produce.
 
 **Target Audience:**
 
 -Small and marginal farmers.
+
 -Farmer Producer Organisations (FPOs).
+
 -Wholesalers and retailers.
+
 -Bulk agricultural buyers.
+
 -Institutional buyers.
 
 ## Research and References
 1.Ministry of Agriculture and Farmers Welfare, Government of India
+
 2.e-NAM – National Agriculture Market
+
 3.Digital India
+
 4.Food and Agriculture Organization of the United Nations
 
 These resources provide background on agricultural marketing, digital agricultural platforms, farmer market access, and supply-chain development.
